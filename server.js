@@ -4,7 +4,6 @@ const app = express();
 
 app.get('/', async (req, res) => {
   try {
-    // Faz uma solicitação ao serviço ipify para obter o endereço IP
     const response = await axios.get('https://api.ipify.org?format=json');
     const ipAddress = response.data.ip;
 
